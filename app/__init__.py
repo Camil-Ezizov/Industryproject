@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 app=Flask(__name__,template_folder='../templates',static_folder='../static')
 db=SQLAlchemy(app)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///C:/Users/User/Desktop/updatedproject/industry.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///./industry.db"
 db = SQLAlchemy(app)
 from app import models
 from app import views
